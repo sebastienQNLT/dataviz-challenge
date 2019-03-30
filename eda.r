@@ -1,11 +1,4 @@
-par_trajet<-read.csv2("https://raw.githubusercontent.com/ToulouseDataViz/Hackaviz2019/master/par_trajet.csv",sep=",",stringsAsFactors = FALSE)
-par_commune<-read.csv2("https://raw.githubusercontent.com/ToulouseDataViz/Hackaviz2019/master/par_commune.csv",sep=",",stringsAsFactors = FALSE)
 
-par_trajet<-par_trajet %>% mutate(latitude=as.numeric(latitude),
-                                  longitude=as.numeric(longitude),
-                                  travail_latitude=as.numeric(travail_latitude),
-                                  travail_longitude=as.numeric(travail_longitude)
-                                  )
 
 library(DataExplorer)
 #general overview ----
